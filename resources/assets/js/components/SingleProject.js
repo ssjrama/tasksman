@@ -146,7 +146,15 @@ class SingleProject extends Component {
                       key={task.id}
                     >
                       {task.title}
-
+                      <button
+                        className='btn btn-danger btn-sm'
+                        onClick={this.handleMarkTaskAsCompleted.bind(
+                          this,
+                          task.id
+                        )}
+                      >
+                        Hapus
+                      </button>
                       <button
                         className='btn btn-primary btn-sm'
                         onClick={this.handleMarkTaskAsCompleted.bind(
